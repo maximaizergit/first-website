@@ -11,6 +11,7 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <script
@@ -18,21 +19,133 @@
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
       crossorigin="anonymous"
     ></script>
-    <div class="container text-center my-5">
+    <!-- navbar start-->
+   
+    <nav class="navbar navbar-expand-lg" style="background-color: #8978ea;">
+      <div class="container-fluid">
+        <!--home button-->
+        <a class="navbar-brand" href="index.html">¯\_(ツ)_/¯</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <!--second button-->
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <!--Dropdown-->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              
+        
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end-->
+    
+    <div class="container text-center my-5 ">
       <div class="row">
         <div class="col-lg-6 col-md-8 mx-auto">
-          <img src="mpht.jpg" alt="where is my photo?" width="250" />
-          <h1 class="fw-light">Максим Щиглов</h1>
-          <p class="lead">Пишу свой первый сайт на html</p>
+            <!--main content-->
+          
+          <img
+            src="img/mpht.jpg"
+            alt="where is my photo?"
+            width="250"
+            height="400"
+            class="roundedimage" 
+            
+          />
+        
+          <h1 class="fw-light my-3">Максим Щиглов</h1>
+          <p class="lead font">Пишу свой первый сайт на html</p>
           <a href="https://vk.com/ggshiglov" target="_blank">
             <div class="btn btn-primary">VK</div>
           </a>
-          <div class="btn btn-primary">Github</div>
-          <a href="https://github.com/maximaizergit">
-            <div class="btn btn-secondary">Telegramm name</div>
+          <a href="https://github.com/maximaizergit" target="_blank">
+            <div class="btn btn-primary">Github</div>
           </a>
+
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            My Telegramm
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    My Telegramm
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">@MaximShiglov</div>
+                <div class="modal-footer"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal end-->
         </div>
       </div>
     </div>
+    <div class="container text-center my-5 ">
+      <div class="row">
+        <div class="col-lg-6 col-md-8 mx-auto">
+             <p class="lead font">Просто текст</p>
+            </div>
+          </div>
+         
+        </div>
+     
+    
   </body>
+  
 </html>

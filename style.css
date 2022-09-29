@@ -1,0 +1,25 @@
+.roundedimage {
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+  box-shadow: 0 0 30px rgba(26, 9, 9, 0.9);
+  padding: 5px;
+}
+.font {
+  font-family: Comic Sans MS;
+}
+.mybg {
+  background: content-box linear-gradient(rgb(82, 240, 240), rgb(174, 46, 209));
+  background-size: 100%;
+}
+
+footer {
+  background-color: #1b285e;
+  box-sizing: content-box;
+}
+body {
+  min-height: auto;
+  max-width: auto;
+  background-image: linear-gradient(rgb(82, 240, 240), rgb(174, 46, 209));
+  margin: 0 auto;
+}
